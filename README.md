@@ -15,7 +15,7 @@
 
 3. HTML.
 
-4. .CSS stylesheet planing.
+4. CSS stylesheet planing.
 
 5. javaScript
 
@@ -25,52 +25,52 @@
 
   
 
-## Developed by:
+# 0. Developed by:
 
 Project Manager - Sharon
 
 Project Team - Brenton, Lamek, Sasam, Lily
 
   
+
+
+
+
   
 
-## User Story
+# 1. User Story
 
-**AS A** music lover,
 
-**WHEN I** Cant remember a song, but can remember a lyric I enter it
-
-**SO THAT** I can search that lyric and find Artist, song and "ripeness then suggests similar songs and playlists.
+> **AS A** music lover,
+> **WHEN I** Cant remember a song, but can remember a lyric I enter it
+> **SO THAT** I can search that lyric and find Artist, song and "ripeness then suggests similar songs and playlists.
 
   
 
 | Task | Status |
-
 |--|--|
-
 | Application is hosted from github | |
-
 | Uses CSS Framework | |
-
 | Uses Local Storage | |
-
 | Uses good semantic HTML | |
-
 | Uses at least two API's| |
-
 | Is dynamic and responds to user input | |
+|||
+
+
+
+# 2. Wire-frame/Chicken Scribble.
+
+## Basic Mobile Wire-frame
+![wire-frame](./assets/images/inital_wireframe.png)
+
+## Style Guide (Starting Point)
+![chicken](./assets/images/chicken.png)
 
   
   
 
-## Wire-frame/Chicken Scribble.
-
-![wire-frame](assets/readme/inital_wireframe.png)
-
-  
-  
-
-## HTML.
+# 3. HTML.
 
   
 
@@ -82,7 +82,7 @@ Project Team - Brenton, Lamek, Sasam, Lily
 
   
 
-## .CSS stylesheet planing.
+# 4. CSS stylesheet planing.
 
   
 
@@ -92,14 +92,16 @@ Project Team - Brenton, Lamek, Sasam, Lily
 
 3. Add external font sheet (google fonts ect)
 
-  
+# 5. JavaScript
 
-## File structure.
+1. 
 
-  
+2. 
 
-1. preped with folder structure to support multiple file types
+3. 
 
-  
+# 6. File structure.
 
-## Future improvements.
+1. Prepared with folder structure to support multiple files of a kind
+
+# 7. Future improvements.

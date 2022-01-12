@@ -1,0 +1,37 @@
+/* Basic style guide and media breakpoints, Please change these values to update themes for the index.html */
+
+:root {
+    --accentBanana: rgb(255, 207, 42);
+    --backgroundDark: rgb(63, 63, 63);
+    --backgroundLight: rgb(255, 255, 255);
+    --accentHighlight: rgb(255,200, 240);
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* ====== Mobile test zone ====== */
+
+@media only screen and (max-width: 600px) {
+
+.headTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.floatingLogo {
+    margin-top: 10%;
+}
+section {
+    width: 100vw;
+}
+
+.outerFrame {
+    padding: 0px;
+}
+
+}
