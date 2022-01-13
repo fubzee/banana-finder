@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Timed Quiz</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Banana Finder Main Page</title>
+
+      <link rel="stylesheet" href="style.css" />
   </head>
 
-
-  <!-- Lily - header that can hold the name and logo
-              form as a container for the search bar
-              button for the search bar
-              give them ID's so we can access the data ect
-              footer 
-  
-  
-  -->
   <body>
+      
+        <header >
+          <h1>
+            <image id="logo" src="logo/Banana Logo.jpg" width="80 px" height ="80 px" ></image> 
+            Banana Finder</h1>
+      </header>
+      <br>
+      <div class="container">
+          <h2>Enter Search</h2>
+
+          <form class="card-footer"action="Results.html">
+            <label for="Artist"><b>Artist:</b></label><br>
+            <input type="text" id="Artist"name="Artist" value=" "><br>
+            <br>
+            <label for="Song Name"><b>Song Name:</b></label><br>
+            <input type="text" id="Song Name"name="Song Name" value=" "><br>
+            <br>
+            <label for="Lyrics"><b>Lyrics:</b></label><br>
+            <input type="text" id="Lyrics" name="Lyrics" value=" "><br>
+    
+        </form>
+          <br>
+        
+        <div class="card-footer">
+          <button id="Search-button" class="btn">Search</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+
+  
+
+
