@@ -5,6 +5,7 @@
     --backgroundDark: rgb(63, 63, 63);
     --backgroundLight: rgb(255, 255, 255);
     --accentHighlight: rgb(255,200, 240);
+    --menuColor: rgb(255, 250, 140);
 }
 
 html {
