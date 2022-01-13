@@ -1,0 +1,47 @@
+/* 
+Table of contents
+1.) Structure
+2.) Text Styling
+3.) Images
+4.) CSS animations
+*/
+
+
+/*  ==========
+1.) Structure
+========== */
+
+
+/*  ==========
+2.) Text Styling
+========== */
+
+h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: white;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+}
+
+/*  ==========
+3.) Images
+========== */
+
+
+/*  ==========
+4.) CSS Animation
+========== */
