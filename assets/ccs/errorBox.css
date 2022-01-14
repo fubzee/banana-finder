@@ -8,7 +8,7 @@
     border-radius: 10px;
     z-index: 20;
     background-color: var(--menuColor);
-    width: 800px;
+    width: 600px;
     max-width: 80%;
     height: 200px;
 }
@@ -19,15 +19,15 @@
 
 .error-header {
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: 20fr 1fr;
 }
 
 .error-header .error-title {
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .error-header #error-close-button {
@@ -64,4 +64,9 @@
 #overlay.active {
     pointer-events: all;
     opacity: 1;
+}
+
+.error-body img {
+    padding-top: 10px;
+    width: 80px;
 }
