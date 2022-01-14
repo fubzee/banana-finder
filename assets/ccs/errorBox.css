@@ -19,7 +19,7 @@
 
 .error-header {
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     display: grid;
     grid-template-columns: 20fr 1fr;
 }
