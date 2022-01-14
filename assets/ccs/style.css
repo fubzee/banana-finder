@@ -24,10 +24,23 @@ header {
     min-height: 100px;
     border: 2px solid var(--menuColor);
     border-radius: 12px;
-    padding: 5px;
+    padding: 15px;
     background-color: var(--menuColor);
     margin-top: 100px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, .5));
 }
+
+.listResults
+{
+    min-height: 100px;
+    border: 2px solid var(--menuColor);
+    border-radius: 12px;
+    padding: 15px;
+    background-color: var(--menuColor);
+    margin-top: 50px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, .5));
+}
+
 
 /*  ==========
 2.) Text Styling
@@ -39,6 +52,7 @@ h1 {
     font-weight: 600;
     color: var(--accentBanana);
     background-color: white;
+    padding-left: 10%;
 }
 
 h2 {
@@ -53,14 +67,41 @@ h3 {
     font-family: sans-serif;
     font-size: 2em;
     font-weight: 400;
-    color: white;
+    color: var(--backgroundDark);
 }
+
+input[type=text] {
+    font-style: italic;
+    padding: 10px;
+    background-color: var(--menuColor);
+    border:0;
+    width: 70%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--backgroundDark);
+}
+
+.btn-custom { 
+    color:#fff;
+    background-color: var(--accentBanana);
+    border-color:var(--accentBanana);
+}
+
 
 /*  ==========
 3.) Images
 ========== */
 
+.logo {
+margin-left: 10%;
+}
 
 /*  ==========
 4.) CSS Animation
 ========== */
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: var(--accentHighlight);
+  }
