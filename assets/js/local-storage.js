@@ -1,4 +1,4 @@
-var lyricsInput = document.querySelector("#lyrics");
+var lyricsInput = document.querySelector("#Artist");
 var searchResultsInput = document.querySelector("#search-button");
 
 searchButton.addEventListener("click", function(event) {
