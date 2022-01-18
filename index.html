@@ -29,12 +29,7 @@
 
 
 
-    </form>
 
-    <div class="container" id="appendResults">
-    <button id="Search-button" class="btn">Search</button>
-    </div>
-</div>
 
 <!-- Error Container -->
 <section id="error-container">
@@ -60,7 +55,7 @@
     <image class="logo" src="assets/images/logo.png" width="85px" height ="85px" ></image>
     <h1>BANANA FINDER</h1>
   </header>
-
+<!-- Search Box -->
   <br>
   <div class="container searchBox">
     <h2>FIND THAT SONG</h2>
@@ -72,20 +67,52 @@
     <div id="lastSearch"></div>
   </div>
 
-
+<!-- First Result -->
   <div class="container listResults">
-    <h2>Results for: <br><span id="result-text">"searched lyric"</span></h2><br>
+    <h2>Results for: <br><span id="searchedLyric">"searched lyric"</span></h2><br>
       <div id="result-content">
-        <h3>Example Result</h3><br>
+        <h3>Result</h3><br>
           <div>
-            <image src="assets/images/albumPlaceHolder.png" width="70px" height ="70px" ></image><br>
+            <image id="albumArt1" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
             <p>
               <strong id="song1">Song:</strong><br>
               <strong id="artist1">Artist:</strong><br>
               <strong id="freshness1">Freshness:</strong><br>
             </p>
           </div>
-        <a href="mobileResults.html" class="btn btn-custom">Full Result</a>
+        <a href="mobileResults.html" class="btn btn-custom">Show More</a>
+      </div>
+  </div>
+
+  <!-- Second Result -->
+  <div class="container listResults">
+      <div id="result-content">
+        <h3>Result</h3><br>
+          <div>
+            <image id="albumArt2" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+            <p>
+              <strong id="song2">Song:</strong><br>
+              <strong id="artist2">Artist:</strong><br>
+              <strong id="freshness2">Freshness:</strong><br>
+            </p>
+          </div>
+        <a href="mobileResults.html" class="btn btn-custom">Show More</a>
+      </div>
+  </div>
+
+  <!-- Third Result -->
+  <div class="container listResults">
+      <div id="result-content">
+        <h3>Result</h3><br>
+          <div>
+            <image id="albumArt3" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+            <p>
+              <strong id="song3">Song:</strong><br>
+              <strong id="artist3">Artist:</strong><br>
+              <strong id="freshness3">Freshness:</strong><br>
+            </p>
+          </div>
+        <a href="mobileResults.html" class="btn btn-custom">Show More</a>
       </div>
   </div>
 
