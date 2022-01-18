@@ -1,18 +1,44 @@
 
-var searchArtist = "Alphaville"
-var searchTerm = "forever young"
 
 
+function clickSearch(){
+    var searchTerm = lyricsBox.value;
+    var apiUrl = "https://api.allorigins.win/get?url=" + encodeURIComponent("http://api.chartlyrics.com/apiv1.asmx/SearchLyricText?lyricText=" + searchTerm );
 
-    fetch("https://www.abbreviations.com/services/v2/lyrics.php?&uid=9860&tokenid=gfCFrxlNnTRayIdf&artist=" + searchArtist + "&term=" + searchTerm +"&format=json")
-    .then(function(response) {
+    fetch(apiUrl)
+        .then(function (response) {
         return response.json();
     })
-        .then(function(data) {
-            console.log(data);
+    .then(function (data) {
+        console.log(data);
+        
+        var xmlDoc = new DOMParser().parseFromString(data.contents, "text/xml");
+        
+        console.log(xmlDoc);
 
-            console.log(data.result[0].album);
-            console.log(data.result[0].artist);
-            console.log(data.result[0].song);
+        var searchResults = xmlDoc.getElementsByTagName("SearchLyricResult");
+        var results = [];
+
+        for (var i = 0; i < searchResults.length; i++) {
+        if (searchResults[i].childNodes.length) {
+            var artist = searchResults[i].getElementsByTagName("Artist")[0].childNodes[0].nodeValue;
+            var song = searchResults[i].getElementsByTagName("Song")[0].childNodes[0].nodeValue;
+            var rank = searchResults[i].getElementsByTagName("SongRank")[0].childNodes[0].nodeValue;
+
+            results.push({
+                artist,
+                song,
+                rank
+            });
+        }
+        }
+
+        console.log(results);
+        document.getElementById("artist1").innerHTML="Artist: " + results[0].artist;
+        document.getElementById("song1").innerHTML="Song: " + results[0].song;
+        document.getElementById("freshness1").innerHTML="Freshness: " + results[0].rank; "bananas";
+    })
+    .catch(function (error) {
+        console.log(error);
     });
-
+}
