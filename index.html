@@ -66,8 +66,8 @@
     <h2>FIND THAT SONG</h2>
 
       <form class="container" action="">
-          <input type="text" id="Lyrics" name="Lyrics" value="" placeholder="LYRICS... IF YA KNOW EM"><br>  
-          <a id="Search-button btn-dark" class="btn btn-custom">Search</a>
+          <input type="text" id="lyricsBox" name="Lyrics" value="" placeholder="LYRICS... IF YA KNOW EM"><br>  
+          <a id="Search-button btn-dark" onclick="clickSearch()" class="btn btn-custom">Search</a>
       </form>
     <div id="lastSearch"></div>
   </div>
@@ -80,9 +80,9 @@
           <div>
             <image src="assets/images/albumPlaceHolder.png" width="70px" height ="70px" ></image><br>
             <p>
-              <strong>Song:</strong><br>
-              <strong>Artist:</strong><br>
-              <strong>Freshness:</strong><br>
+              <strong id="song1">Song:</strong><br>
+              <strong id="artist1">Artist:</strong><br>
+              <strong id="freshness1">Freshness:</strong><br>
             </p>
           </div>
         <a href="mobileResults.html" class="btn btn-custom">Full Result</a>
