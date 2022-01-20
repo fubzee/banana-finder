@@ -41,6 +41,10 @@ header {
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, .5));
 }
 
+.whiteBackground {
+    background-color: white;
+}
+
 
 /*  ==========
 2.) Text Styling
@@ -51,8 +55,9 @@ h1 {
     font-size: 3em;
     font-weight: 600;
     color: var(--accentBanana);
-    background-color: white;
     padding-left: 10%;
+    position: relative;
+    top: -6px;
 }
 
 h2 {
@@ -95,6 +100,14 @@ input[type=text] {
 
 .logo {
 margin-left: 10%;
+}
+
+.shadowCSS {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.7));
+}
+
+.container {
+    padding-left: 1.75rem;
 }
 
 /*  ==========

@@ -27,10 +27,6 @@
 
 </head>
 
-
-
-
-
 <!-- Error Container -->
 <section id="error-container">
   <div class="error-header">
@@ -40,7 +36,7 @@
 
   <div class="error-body">
     <p class="error-text">Hmmm... You must be bananas because I haven't heard of that one!</p>
-    <img src="/assets/images/sadbanana.gif" alt="Sad Banana Gif">
+    <img src="./assets/images/sadbanana.gif" alt="Sad Banana Gif">
   </div>
 
 </section>
@@ -53,11 +49,11 @@
 
   <header class="headerMenu">
     <image class="logo" src="assets/images/logo.png" width="85px" height ="85px" ></image>
-    <h1>BANANA FINDER</h1>
+    <div class="whiteBackground" ><h1>BANANA FINDER</h1></div>
   </header>
 <!-- Search Box -->
   <br>
-  <div class="container searchBox">
+  <div class="container searchBox shadowCSS">
     <h2>FIND THAT SONG</h2>
 
       <form class="container" action="">
@@ -68,54 +64,65 @@
   </div>
 
 <!-- First Result -->
-  <div class="container listResults">
+  <div class="container listResults shadowCSS">
     <h2>Results for: <br><span id="searchedLyric">"searched lyric"</span></h2><br>
       <div id="result-content">
         <h3>Result</h3><br>
           <div>
-            <image id="albumArt1" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+            <image class="shadowCSS" id="albumArt1" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
             <p>
+              <br>
               <strong id="song1">Song:</strong><br>
               <strong id="artist1">Artist:</strong><br>
               <strong id="freshness1">Freshness:</strong><br>
             </p>
+            <br>
           </div>
         <a href="mobileResults.html" class="btn btn-custom">Show More</a>
       </div>
   </div>
 
   <!-- Second Result -->
-  <div class="container listResults">
+  <div class="container listResults shadowCSS">
       <div id="result-content">
         <h3>Result</h3><br>
           <div>
-            <image id="albumArt2" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+            <image class="shadowCSS" id="albumArt2" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
             <p>
+              <br>
               <strong id="song2">Song:</strong><br>
               <strong id="artist2">Artist:</strong><br>
               <strong id="freshness2">Freshness:</strong><br>
             </p>
+            <br>
           </div>
         <a href="mobileResults.html" class="btn btn-custom">Show More</a>
       </div>
   </div>
 
   <!-- Third Result -->
-  <div class="container listResults">
+  <div class="container listResults shadowCSS">
       <div id="result-content">
         <h3>Result</h3><br>
           <div>
-            <image id="albumArt3" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+            <image class="shadowCSS" id="albumArt3" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
             <p>
+              <br>
               <strong id="song3">Song:</strong><br>
               <strong id="artist3">Artist:</strong><br>
               <strong id="freshness3">Freshness:</strong><br>
             </p>
+            <br>
           </div>
         <a href="mobileResults.html" class="btn btn-custom">Show More</a>
       </div>
   </div>
 
+  <br>
+  <br>
+  <br>
+
+  <header class="headerMenu"></header>
 
 
   <!-- Script -->
