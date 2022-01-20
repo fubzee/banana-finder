@@ -41,6 +41,17 @@ header {
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, .5));
 }
 
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: var(--accentBanana);
+    margin-top: 150px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+}
+
 
 /*  ==========
 2.) Text Styling
