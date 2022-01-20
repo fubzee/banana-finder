@@ -124,3 +124,10 @@ margin-left: 10%;
     color: rgb(255, 255, 255);
     background: var(--accentHighlight);
   }
+
+  .hidden {
+      visibility: hidden;
+  }
+  .visible {
+      visibility: visible;
+  }
