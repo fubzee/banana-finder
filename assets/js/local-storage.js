@@ -1,4 +1,6 @@
-var lyricsInput = document.querySelector("#lyrics");
+var artistInput = document.querySelector("#Artist");
+var songInput = document.querySelector("#Song")
+
 var searchResultsInput = document.querySelector("#search-button");
 
 searchButton.addEventListener("click", function(event) {
@@ -6,8 +8,8 @@ searchButton.addEventListener("click", function(event) {
   
   // create user object from submission
   var user = {
-    lyrics: lyricsInput.value.trim(),
-    search: searchInput.value.trim(),
+    artist: artistInput.value.trim(),
+    song: songInput.value.trim(),
     
   };
 
