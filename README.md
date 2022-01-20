@@ -49,12 +49,12 @@ Project Team - Brenton, Lamek, Sasam, Lily
 
 | Task | Status |
 |--|--|
-| Application is hosted from github | |
-| Uses CSS Framework | |
+| Application is hosted from github | Done |
+| Uses a CSS Framework | Done |
 | Uses Local Storage | |
 | Uses good semantic HTML | |
-| Uses at least two API's| |
-| Is dynamic and responds to user input | |
+| Uses at least two API's| Done |
+| Is dynamic and responds to user input | Done |
 |||
 
 
@@ -92,13 +92,17 @@ Project Team - Brenton, Lamek, Sasam, Lily
 
 3. Add external font sheet (google fonts ect)
 
+
+
 # 5. JavaScript
 
-1. 
+1. Things to note, we had to convert our first API form XML to JSON before we were able to use any of the d
 
 2. 
 
 3. 
+
+
 
 # 6. File structure.
 
