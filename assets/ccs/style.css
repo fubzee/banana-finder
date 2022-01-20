@@ -50,6 +50,7 @@ footer {
     font-weight: 700;
     font-size: 1rem;
     text-align: center;
+}
 
 .CSSDropShadow{
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.60));
