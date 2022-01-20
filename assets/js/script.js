@@ -1,7 +1,8 @@
 
 
-
+document.getElementById("visibility").setAttribute("class" , "hidden");
 function clickSearch(){
+    document.getElementById("visibility").setAttribute("class" , "visible");
     var searchTerm = lyricsBox.value;
     var apiUrl = "https://api.allorigins.win/get?url=" + encodeURIComponent("http://api.chartlyrics.com/apiv1.asmx/SearchLyricText?lyricText=" + searchTerm );
 
