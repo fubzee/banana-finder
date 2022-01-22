@@ -1,6 +1,7 @@
 
 # banana-finder
 
+
 Deployed application link: https://fubzee.github.io/banana-finder/
 
 Github Repo: https://github.com/fubzee/banana-finder
@@ -8,6 +9,7 @@ Github Repo: https://github.com/fubzee/banana-finder
 Supporting links: (presentation)
 
 #
+
 
 ## Table of Contents
 
@@ -117,6 +119,7 @@ Project Team - Brenton, Lamek, Sasam, Lily
 1. Prepared with folder structure to support multiple files of a kind
 
 # 7. Future improvements.
+
 1. Allow users to see upcoming artist vents and purchase tickets at a discounted price.
 2. Social integration for users to share songs as reels or stories on popular social media sites.
 3. Adding a live listen browser extension so that user can find details for music in tv or movies.
