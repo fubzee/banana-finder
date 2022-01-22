@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <!-- Bootstrap -->
-<!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 <!-- Style Sheets  -->
@@ -26,7 +25,6 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-<link rel="manifest" href="assets/images/site.webmanifest">
 <link rel="mask-icon" href="assets/images/mstile-150x150.png" color="#d5bb5b">
 <meta name="msapplication-TileColor" content="#ffc40d">
 <meta name="theme-color" content="#ffffff">
@@ -52,12 +50,13 @@
 
 
 <body>
-
-
+<!-- Header Menu - will eventually hold menu options but docent need them at this stage -->
   <header class="headerMenu">
     <image class="logo" src="assets/images/logo.png" width="85px" height ="85px" ></image>
-    <h1>BANANA FINDER</h1>
+    <div class="headerBackground"><h1>BANANA FINDER</h1></div>
   </header>
+
+
 <!-- Search Box -->
   <br>
   <div class="container searchBox">
@@ -70,6 +69,7 @@
     <div id="lastSearch"></div>
   </div>
 <div id="visibility">
+
 <!-- First Result -->
   <div class="container listResults CSSDropShadow">
     <h2>Results for: <br><span id="searchedLyric">"searched lyric"</span></h2><br>
