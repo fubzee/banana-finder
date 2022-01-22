@@ -82,7 +82,7 @@ h1 {
 h2 {
     font-family: Nunito Sans, sans-serif;
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--backgroundDark);
     
 }
@@ -92,6 +92,14 @@ h3 {
     font-size: 2em;
     font-weight: 400;
     color: var(--backgroundDark);
+}
+
+h4 {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--backgroundDark);
+
 }
 
 input[type=text] {
@@ -117,6 +125,9 @@ input[type=text] {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
 
 /*  ==========
 3.) Images

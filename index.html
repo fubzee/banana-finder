@@ -17,15 +17,15 @@
 
 <!-- Style Sheets  -->
 
-<link rel="stylesheet" href="assets/ccs/reset.css">
-<link rel="stylesheet" href="assets/ccs/styleGuide.css">
-<link rel="stylesheet" href="assets/ccs/style.css">
-<link rel="stylesheet" href="assets/ccs/errorBox.css">
+<link rel="stylesheet" href="./assets/ccs/reset.css">
+<link rel="stylesheet" href="./assets/ccs/styleGuide.css">
+<link rel="stylesheet" href="./assets/ccs/style.css">
+<link rel="stylesheet" href="./assets/ccs/errorBox.css">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-<link rel="mask-icon" href="assets/images/mstile-150x150.png" color="#d5bb5b">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+<link rel="mask-icon" href="./assets/images/mstile-150x150.png" color="#d5bb5b">
 <meta name="msapplication-TileColor" content="#ffc40d">
 <meta name="theme-color" content="#ffffff">
 
@@ -41,7 +41,7 @@
 
   <div class="error-body">
     <p class="error-text">Hmmm... You must be bananas because I haven't heard of that one!</p>
-    <img src="/assets/images/sadbanana.gif" alt="Sad Banana Gif">
+    <img src="./assets/images/sadbanana.gif" alt="Sad Banana Gif">
   </div>
 
 </section>
@@ -49,99 +49,102 @@
 <div id="overlay"></div>
 
 
-<body>
-<!-- Header Menu - will eventually hold menu options but docent need them at this stage -->
-  <header class="headerMenu">
-    <image class="logo" src="assets/images/logo.png" width="85px" height ="85px" ></image>
-    <div class="headerBackground"><h1>BANANA FINDER</h1></div>
-  </header>
+  <body>
+  <!-- Header Menu - will eventually hold menu options but docent need them at this stage -->
+    <header class="headerMenu">
+      <a href="index.html">
+        <image class="logo" src="./assets/images/logo.png" href="mobileResults.html" width="85px" height ="85px" ></image>
+        <div class="headerBackground"><h1>BANANA FINDER</h1></div>
+      </a>
+    </header>
 
 
-<!-- Search Box -->
-  <br>
-  <div class="container searchBox">
-    <h2>FIND THAT SONG</h2>
+  <!-- Search Box -->
+    <br>
+    <div class="container searchBox">
+      <h2>FIND THAT SONG</h2>
 
-      <form class="container" action="">
-          <input type="text" id="lyricsBox" name="Lyrics" value="" placeholder="LYRICS... IF YA KNOW EM"><br>  
-          <a id="Search-button btn-dark" onclick="clickSearch()" class="btn btn-custom">Search</a>
-      </form>
-    <div id="lastSearch"></div>
+        <form class="container" action="">
+            <input type="text" id="lyricsBox" name="Lyrics" value="" placeholder="LYRICS... IF YA KNOW EM"><br>  
+            <a id="Search-button btn-dark" onclick="clickSearch()" class="btn btn-custom">Search</a>
+        </form>
+      <div id="lastSearch"></div>
+    </div>
+  <div id="visibility">
+
+  <!-- First Result -->
+    <div class="container listResults CSSDropShadow">
+      <h2>Results for: <br><span id="searchedLyric">"searched lyric"</span></h2><br>
+        <div id="result-content">
+          <h3>Result</h3><br>
+            <div>
+              <image id="albumArt1" Class="CSSDropShadow" src="./assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+              <p>
+                <br>
+                <strong id="song1">Song:</strong><br>
+                <strong id="artist1">Artist:</strong><br>
+                <strong id="freshness1">Freshness:</strong><br>
+                <br>
+              </p>
+            </div>
+          <a href="mobileResults.html" class="btn btn-custom">Show More</a>
+        </div>
+    </div>
+
+    <!-- Second Result -->
+    <div class="container listResults CSSDropShadow">
+        <div id="result-content">
+          <h3>Result</h3><br>
+            <div>
+              <image id="albumArt2" Class="CSSDropShadow" src="./assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+              <p>
+                <br>
+                <strong id="song2">Song:</strong><br>
+                <strong id="artist2">Artist:</strong><br>
+                <strong id="freshness2">Freshness:</strong><br>
+                <br>
+              </p>
+            </div>
+          <a href="mobileResults.html" class="btn btn-custom">Show More</a>
+        </div>
+    </div>
+
+    <!-- Third Result -->
+    <div class="container listResults CSSDropShadow">
+        <div id="result-content">
+          <h3>Result</h3><br>
+            <div>
+              <image id="albumArt3" Class="CSSDropShadow" src="./assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
+              <p>
+                <br>
+                <strong id="song3">Song:</strong><br>
+                <strong id="artist3">Artist:</strong><br>
+                <strong id="freshness3">Freshness:</strong><br>
+                <br>
+              </p>
+            </div>
+          <a href="mobileResults.html" class="btn btn-custom">Show More</a>
+        </div>
+    </div>
   </div>
-<div id="visibility">
-
-<!-- First Result -->
-  <div class="container listResults CSSDropShadow">
-    <h2>Results for: <br><span id="searchedLyric">"searched lyric"</span></h2><br>
-      <div id="result-content">
-        <h3>Result</h3><br>
-          <div>
-            <image id="albumArt1" Class="CSSDropShadow" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
-            <p>
-              <br>
-              <strong id="song1">Song:</strong><br>
-              <strong id="artist1">Artist:</strong><br>
-              <strong id="freshness1">Freshness:</strong><br>
-              <br>
-            </p>
-          </div>
-        <a href="mobileResults.html" class="btn btn-custom">Show More</a>
-      </div>
-  </div>
-
-  <!-- Second Result -->
-  <div class="container listResults CSSDropShadow">
-      <div id="result-content">
-        <h3>Result</h3><br>
-          <div>
-            <image id="albumArt2" Class="CSSDropShadow" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
-            <p>
-              <br>
-              <strong id="song2">Song:</strong><br>
-              <strong id="artist2">Artist:</strong><br>
-              <strong id="freshness2">Freshness:</strong><br>
-              <br>
-            </p>
-          </div>
-        <a href="mobileResults.html" class="btn btn-custom">Show More</a>
-      </div>
-  </div>
-
-  <!-- Third Result -->
-  <div class="container listResults CSSDropShadow">
-      <div id="result-content">
-        <h3>Result</h3><br>
-          <div>
-            <image id="albumArt3" Class="CSSDropShadow" src="assets/images/albumPlaceHolder.png" width="150px" height ="150px" ></image><br>
-            <p>
-              <br>
-              <strong id="song3">Song:</strong><br>
-              <strong id="artist3">Artist:</strong><br>
-              <strong id="freshness3">Freshness:</strong><br>
-              <br>
-            </p>
-          </div>
-        <a href="mobileResults.html" class="btn btn-custom">Show More</a>
-      </div>
-  </div>
-</div>
 
 
-  <!-- Script -->
-  
-  <!-- <script src="assets/js/error-box.js"></script> -->
-  <script src="assets/js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-</body>
+    <!-- Script -->
+    
+    <!-- <script src="assets/js/error-box.js"></script> -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 
-<footer class="footerMenu">
-  
-  <p></p> Feeling particularly social? <br>
-  Why not reach out to us on our community of music lovers?</p>
-  
-</footer>
+
+    <footer class="footerMenu">
+      
+      <p> Feeling particularly social?</p> <br>
+      Why not reach out to us on our community of music lovers?</p>
+      
+    </footer>
+  </body>
 </html>
 
 
