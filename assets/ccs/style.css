@@ -94,6 +94,10 @@ h3 {
     color: var(--backgroundDark);
 }
 
+a {
+    text-decoration: none;
+}
+
 input[type=text] {
     font-style: italic;
     padding: 10px;
