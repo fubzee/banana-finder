@@ -3,11 +3,11 @@ const overlay = document.getElementById("overlay")
 const errorContainer = document.getElementById("error-container")
 
 // Function if lyrics are not found 
-/* if (lyrics are not found) {
+ if (error) {
     overlay.classList.add("active")
     errorContainer.classList.add("active")
 } 
-*/
+
 
 // Close Error Box Button 
 function closeContainer() {
