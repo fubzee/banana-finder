@@ -1,5 +1,7 @@
 
 # banana-finder
+# Known Issues
+1.ALBUM ART - We did experience issues using the URL provided by our API only gave us http links, not https and that means we cant view the album art when deployed. It works perfectly when hosted locally. Please see image at bottom of README
 
 
 Deployed application link: https://fubzee.github.io/banana-finder/
@@ -124,3 +126,7 @@ Project Team - Brenton, Lamek, Sasam, Lily
 2. Social integration for users to share songs as reels or stories on popular social media sites.
 3. Adding a live listen browser extension so that user can find details for music in tv or movies.
 4. Display lyrics alongside search results.
+
+
+## Style Guide (Starting Point)
+![ERROR](./assets/images/errorAlbumArt.png)
