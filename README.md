@@ -6,7 +6,7 @@ Deployed application link: https://fubzee.github.io/banana-finder/
 
 Github Repo: https://github.com/fubzee/banana-finder
 
-Supporting links: (presentation)
+Supporting links: https://docs.google.com/presentation/d/1pUnNa89MIznuCAZJopIeIFIJDXKujv7h2k9snAtxGOo/edit#slide=id.p1
 
 #
 
