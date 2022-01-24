@@ -45,11 +45,11 @@ function clickSearch(){
         return response.json();
         })
         .then(function (data) {
-        console.log(data);              
+                    
         var xmlDocSec = new DOMParser().parseFromString(data.contents, "text/xml");
-        console.log(xmlDocSec);
         var searchPhoto = xmlDocSec.getElementsByTagName("GetLyricResult");
         var photo = searchPhoto[0].getElementsByTagName("LyricCovertArtUrl")[0].childNodes[0].nodeValue;
+
         document.getElementById("artist1").innerHTML="Artist: " + results[0].artist;
         document.getElementById("song1").innerHTML="Song: " + results[0].song;
         document.getElementById("freshness1").innerHTML="Freshness: " + results[0].rank;
@@ -66,16 +66,16 @@ function clickSearch(){
         return response.json();
         })
         .then(function (data) {
-        console.log(data);              
-        var xmlDocTrd = new DOMParser().parseFromString(data.contents, "text/xml");
-        console.log(xmlDocTrd);
-        var searchPhotoSec = xmlDocTrd.getElementsByTagName("GetLyricResult");
-        var photoSec = searchPhotoSec[0].getElementsByTagName("LyricCovertArtUrl")[0].childNodes[0].nodeValue;
-        document.getElementById("artist2").innerHTML="Artist: " + results[1].artist;
-        document.getElementById("song2").innerHTML="Song: " + results[1].song;
-        document.getElementById("freshness2").innerHTML="Freshness: " + results[1].rank;
-        document.getElementById("albumArt2").setAttribute("src", photoSec);
-        banana_meter(2,results[1].rank);
+                    
+            var xmlDocTrd = new DOMParser().parseFromString(data.contents, "text/xml");
+            var searchPhotoSec = xmlDocTrd.getElementsByTagName("GetLyricResult");
+            var photoSec = searchPhotoSec[0].getElementsByTagName("LyricCovertArtUrl")[0].childNodes[0].nodeValue;
+
+            document.getElementById("artist2").innerHTML="Artist: " + results[1].artist;
+            document.getElementById("song2").innerHTML="Song: " + results[1].song;
+            document.getElementById("freshness2").innerHTML="Freshness: " + results[1].rank;
+            document.getElementById("albumArt2").setAttribute("src", photoSec);
+            banana_meter(2,results[1].rank);
         })
 
 
@@ -85,24 +85,23 @@ function clickSearch(){
         return response.json();
         })
         .then(function (data) {
-        console.log(data);              
-        var xmlDocFrt = new DOMParser().parseFromString(data.contents, "text/xml");
-        console.log(xmlDocFrt);
-        var searchPhotoTrd = xmlDocFrt.getElementsByTagName("GetLyricResult");
-        var photoTrd = searchPhotoTrd[0].getElementsByTagName("LyricCovertArtUrl")[0].childNodes[0].nodeValue;
-        document.getElementById("artist3").innerHTML="Artist: " + results[2].artist;
-        document.getElementById("song3").innerHTML="Song: " + results[2].song;
-        document.getElementById("freshness3").innerHTML="Freshness: " + results[2].rank;
-        document.getElementById("albumArt3").setAttribute("src", photoTrd);
-        banana_meter(3,results[2].rank);
+                    
+            var xmlDocFrt = new DOMParser().parseFromString(data.contents, "text/xml");
+            var searchPhotoTrd = xmlDocFrt.getElementsByTagName("GetLyricResult");
+            var photoTrd = searchPhotoTrd[0].getElementsByTagName("LyricCovertArtUrl")[0].childNodes[0].nodeValue;
+
+            document.getElementById("artist3").innerHTML="Artist: " + results[2].artist;
+            document.getElementById("song3").innerHTML="Song: " + results[2].song;
+            document.getElementById("freshness3").innerHTML="Freshness: " + results[2].rank;
+            document.getElementById("albumArt3").setAttribute("src", photoTrd);
+            banana_meter(3,results[2].rank);
         })
     })
     .catch(function (error) {
-        console.log(error);
 
-    const closeErrorButton = document.getElementById("error-close-button")
-    const overlay = document.getElementById("overlay")
-    const errorContainer = document.getElementById("error-container")
+        const closeErrorButton = document.getElementById("error-close-button")
+        const overlay = document.getElementById("overlay")
+        const errorContainer = document.getElementById("error-container")
 
     // Function if lyrics are not found 
     if (error) {
@@ -113,7 +112,7 @@ function clickSearch(){
 
     // Close Error Box Button 
     function closeContainer() {
-    console.log("button pressed")
+
     overlay.classList.remove("active") 
     errorContainer.classList.remove("active")
     }
